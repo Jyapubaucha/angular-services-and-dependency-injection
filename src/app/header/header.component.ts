@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SubscribeService } from '../Services/subscribe.service';
 
 @Component({
   selector: 'app-header',
@@ -17,5 +18,12 @@ export class HeaderComponent {
   //When Admin Link is clicked
   AdminClicked(){
     this.selectedTab = 'admin';
+  }
+
+  OnSubscribe(){
+
+    let subService = new SubscribeService();
+    subService.OnSubscribeClicked('monthly');
+
   }
 }
