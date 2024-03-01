@@ -1,5 +1,9 @@
 export class SubscribeService{
     
+  constructor(){
+    
+  }
+
     OnSubscribeClicked(type: string){
 
         // ------Types of subscribe --------------

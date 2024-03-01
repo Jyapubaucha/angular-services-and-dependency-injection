@@ -4,15 +4,15 @@ import { SubscribeService } from 'src/app/Services/subscribe.service';
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
-  styleUrls: ['./hero.component.css']
+  styleUrls: ['./hero.component.css'],
+  providers: [SubscribeService]
 })
 export class HeroComponent {
 
+  constructor(private subService: SubscribeService){}
+
   OnSubscribe(){
-
-    let subService = new SubscribeService;
-    subService.OnSubscribeClicked('yearly');
-
+    this.subService.OnSubscribeClicked('yearly');
   }
 
 }
