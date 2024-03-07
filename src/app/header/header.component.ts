@@ -5,7 +5,7 @@ import { SubscribeService } from '../Services/subscribe.service';
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
-  providers: [SubscribeService]
+  // providers: [SubscribeService]
 })
 export class HeaderComponent {
 
@@ -23,7 +23,7 @@ export class HeaderComponent {
     this.selectedTab = 'admin';
   }
 
-  OnSubscribe(){
+  OnSubscribe(){ 
     this.subService.OnSubscribeClicked('monthly');
 
   } 
