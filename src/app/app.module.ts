@@ -34,8 +34,7 @@ export const USER_TOKEN = new InjectionToken<UserService>('USER_SERVICE');
   ],
   providers: [
     SubscribeService, 
-    {provide: USER_TOKEN, useClass: UserService}, 
-    LoggerService
+    {provide: USER_TOKEN, useClass: UserService}
   ],
   bootstrap: [AppComponent]
 })
