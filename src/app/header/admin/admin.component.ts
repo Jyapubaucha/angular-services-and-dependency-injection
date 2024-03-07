@@ -5,7 +5,7 @@ import { UserService } from 'src/app/Services/user.service';
   selector: 'app-admin',
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css'],
-  providers: [UserService]
+  // providers: [UserService]
 })
 export class AdminComponent {
 
