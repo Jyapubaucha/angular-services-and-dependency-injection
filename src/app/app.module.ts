@@ -8,6 +8,8 @@ import { HomeComponent } from './header/home/home.component';
 import { HeroComponent } from './header/home/hero/hero.component';
 import { SidebarComponent } from './header/home/sidebar/sidebar.component';
 import { SubscribeService } from './Services/subscribe.service';
+import { UserDetailComponent } from './header/admin/user-detail/user-detail.component';
+import { UserListComponent } from './header/admin/user-list/user-list.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { SubscribeService } from './Services/subscribe.service';
     AdminComponent,
     HomeComponent,
     HeroComponent,
-    SidebarComponent
+    SidebarComponent,
+    UserDetailComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule
